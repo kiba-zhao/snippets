@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: egg-test-it
+# key: eti
+# group: egg
+# --
+it('${2:error}', async () => {
+  $0
+  const res = await ${3:function}(${4:args});
+  return res;
+
+});
