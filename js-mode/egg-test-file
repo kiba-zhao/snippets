@@ -4,7 +4,7 @@
 # group: egg
 # --
 /**
- * @fileOverview ${1:file}测试文件
+ * @fileOverview $1测试文件
  * @name `(file-name-nondirectory buffer-file-name)`
  * @author kiba.x.zhao <xiafeng@aegleanalytica.io>
  * @license MIT
@@ -14,17 +14,8 @@
 const { app, assert } = require('egg-mock/bootstrap');
 const sinon = require('sinon');
 
-describe('test/${2:path}/`(file-name-nondirectory buffer-file-name)`', () => {
+describe('${2:`(substring buffer-file-name (+ (string-match "/test/" buffer-file-name) 1))`}', () => {
 
-  describe('${3:function}', () => {
-
-    it('${4:success}', async () => {
-      $0
-      const res = await ${5:function}(${6:args});
-      return res;
-
-    });
-
-  });
+  $0
 
 });
