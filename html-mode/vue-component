@@ -1,15 +1,9 @@
 # -*- mode: snippet -*-
-# name: vue-view
-# key: vvw
+# name: vue-component
+# key: vct
 # group: vue
 # --
-<!-- $1视图 -->
-<i18n>
-en:
-  _:$1
-zh:
-  _:$1
-</i18n>
+<!-- $1组件 -->
 
 <template>
   <${2:div}>$1</$2>
